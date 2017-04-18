@@ -5,13 +5,10 @@
 #include <vector>
 
 class arffWriter{
-	private:
-		
-		
-
 		
 	public:
-		
+		arffWriter();//constructor
+		void writeFile();//
 
 		
 		
