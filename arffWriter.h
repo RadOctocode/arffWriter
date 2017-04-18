@@ -1,7 +1,7 @@
-#ifndef arffWriter
-#define arffWriter
+#ifndef ARFFWRITER_
+#define ARFFWRITER
 #include <iostream>
-#include <cstring>
+#include <string>
 #include <fstream>
 #include <vector>
 
@@ -11,7 +11,7 @@ class arffWriter{
 		std::string file_name;
 
 	public:
-		arffWriter(std::string my_file_name);//constructor
+		arffWriter(std::string my_file_name );//constructor
 		void writeFile();//
 
 		

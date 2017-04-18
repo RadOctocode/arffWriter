@@ -3,10 +3,11 @@
 
 
 	arffWriter::arffWriter(std::string my_file_name){
-		file_name=my_file_name;
+		file_name = my_file_name;
 	}//empty consrtcutor
 
-	void arff::writeFile(){
+	void arffWriter::writeFile(){
+		std::cout<<file_name;
 		std::ifstream myfile (file_name);
   		if (myfile.is_open()){
   			std::string line;
