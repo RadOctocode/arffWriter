@@ -8,13 +8,16 @@
 class arffWriter{
 	
 	private:
-		std::string file_name;
+		std::string read_file;
+		std::string write_file;
+
 
 	public:
-		arffWriter(std::string my_file_name );//constructor
-		void writeFile();//
+		std::ofstream writefile;
+		std::ifstream readfile;
 
-		
+		arffWriter(std::string my_read_file, std::string my_write_file );//constructor
+		void writeFile();//
 		
 };
 #endif
