@@ -13,7 +13,7 @@ arffWriter.o: arffWriter.cpp
 	g++ -c $(C_FLAG) arffWriter.cpp -o arffWriter.o
 
 clean:
-	rm *.o $(PROGRAM_NAME)
+	rm *.o $(PROGRAM_NAME) my_Arff_File
 
 checkmem:
 	valgrind ./$(PROGRAM_NAME)
