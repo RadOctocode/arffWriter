@@ -1,4 +1,4 @@
-#ifndef ARFFWRITER_
+#ifndef ARFFWRITER
 #define ARFFWRITER
 #include <iostream>
 #include <string>
@@ -7,14 +7,11 @@
 
 class arffWriter{
 	
-	private:
-		std::string read_file;
-		std::string write_file;
 
 
 	public:
-		std::ofstream writefile;
-		std::ifstream readfile;
+		std::ofstream write_file;
+		std::ifstream read_file;
 
 		arffWriter(std::string my_read_file, std::string my_write_file );//constructor
 		void writeFile();//
